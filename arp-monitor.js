@@ -61,8 +61,8 @@ ArpMonitor.prototype.ping = function() {
             stream.emit("update", activeClients);
             stream.previous = updates;
             activeClients = {};
-        }, 50000);
-    }, 60000);
+        }, 20000);
+    }, 25000);
 };
 
 function setIntervalAndExecute(fn, t) {
